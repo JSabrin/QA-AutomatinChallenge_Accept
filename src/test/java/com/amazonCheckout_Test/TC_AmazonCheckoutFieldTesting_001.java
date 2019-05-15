@@ -75,14 +75,12 @@ public class TC_AmazonCheckoutFieldTesting_001 {
 		   
            Thread.sleep(2000);
 		   
-           //sorry no choice to Checkout without create a sign up
 		   driver.findElement(By.name("email")).sendKeys("jsabrina955@gmail.com");
 		   driver.findElement(By.name("password")).sendKeys("abcd123$");
 		   driver.findElement(By.id("signInSubmit")).click();
 		   
 		   Thread.sleep(2000);
 		  
-		  //sorry invalid Address is not taking that's why I am using this address
 		   
 		  WebElement txtAddress = driver.findElement(By.name("enterAddressAddressLine1"));
 		  txtAddress.sendKeys("47 Howard St.");
